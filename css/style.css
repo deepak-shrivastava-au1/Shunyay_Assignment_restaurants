@@ -1,0 +1,536 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2em;
+}
+ul#navigation a{
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+ul#navigation a:hover{
+  color: yellow;
+}
+.socail_links i {
+  font-size: 16px;
+  padding-top: 20px;
+  font-weight: 700;
+}
+.socail_links i:hover{
+  color: yellow;
+}
+img:hover{
+  cursor: pointer;
+  zoom: 101%;
+  transition: ease-out;
+  opacity: 50%;
+}
+.header-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+}
+@media (max-width: 1500px) and (min-width: 1200px){
+  .header-area .main-header-area {
+    padding: 0 10px;
+  }
+}
+.header-area .main-header-area {
+  padding: 0 150px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+.header-area .main-header-area .main-menu ul li:first-child a {
+  padding-left: 0;
+}
+.header-area .main-header-area .main-menu ul li {
+  display: inline-block;
+  position: relative;
+  margin-right: 45px;
+}
+@media (max-width: 1500px) and (min-width: 1200px){
+.header-area .main-header-area .main-menu ul li {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 1500px) and (min-width: 1200px){
+.header-area .main-header-area .main-menu ul li a {
+    font-size: 15px;
+  }
+}
+.header-area .main-header-area .main-menu ul li a {
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0px 0px 10px 0px;
+  font-family: "Paytone One", sans-serif;
+  position: relative;
+  text-transform: capitalize;
+}
+a, button {
+  color: #1F1F1F;
+  outline: medium none;
+}
+.header-area .main-header-area .main-menu ul li a.active {
+  color: #F2C64D;
+}
+@media (max-width: 1500px) and (min-width: 1200px){
+  .header-area .main-header-area .main-menu ul li a {
+      font-size: 15px;
+  }
+}
+.header-area .main-header-area .book_room .socail_links ul li {
+  display: inline-block;
+}
+.header-area .main-header-area .book_room .socail_links ul li a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 16px;
+}
+.header-area .main-header-area .book_room {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+}
+.header-area .main-header-area .book_room .book_btn {
+  margin-left: 15px;
+}
+
+.header-area .main-header-area .book_room .book_btn a {
+  background: transparent;
+  padding: 12px 26px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #F2C64D;
+  color: #F2C64D;
+  border-radius: 30px;
+  font-family: "Paytone One", sans-serif;
+}
+.header-area .main-header-area .main-menu ul li a i {
+  font-size: 9px;
+}
+.header-area .main-header-area .main-menu ul li a::before {
+  position: absolute;
+  content: "";
+  background: #F2C64D;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transform: scaleX(0);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.header-area .main-header-area .main-menu ul li .submenu {
+  position: absolute;
+  left: 0;
+  top: 140%;
+  background: #fff;
+  width: 200px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+.header-area .main-header-area .main-menu ul li .submenu li {
+  display: block;
+}
+@media (max-width: 1500px) and (min-width: 1200px){
+.header-area .main-header-area .main-menu ul li {
+    margin-right: 15px;
+  }
+}
+.header-area .main-header-area .main-menu ul li .submenu li a {
+  padding: 10px 15px;
+  position: inherit;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  display: block;
+  color: #000;
+}
+.mobile_menu {
+  position: absolute;
+  right: 10px;
+  width: 96%;
+  z-index: 99;
+}
+.bradcam_area h3 {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-family: "Paytone One", sans-serif;
+  text-transform: uppercase;
+}
+
+.slicknav_btn {
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 99;
+  border: none;
+  border-radius: 3px;
+  top: 5px;
+  padding: 5px;
+  right: -8px;
+  margin-top: -5px;
+  top: -31px;
+}
+.bradcam_area {
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 215px 0 100px 0;
+}
+
+.breadcam_bg {
+  background-image: url(../img/banner/bradcam.png);
+}
+.overlay {
+  position: relative;
+  z-index: 0;
+}
+.section_title span {
+  color: #F2C64D;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  display: block;
+  font-family: "Pacifico", cursive;
+}
+.section_title h3 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1A0D01;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.best_burgers_area .single_delicious .thumb img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.best_burgers_area .single_delicious .thumb {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.best_burgers_area .single_delicious .info {
+  padding-left: 20px;
+}
+.best_burgers_area .single_delicious .info h3 {
+  font-size: 30px;
+  color: #1A0D01;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.best_burgers_area .single_delicious .info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  color: #6E6E6E;
+  font-family: "Montserrat", sans-serif;
+}
+.best_burgers_area .single_delicious .info span {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    color: #F0542C;
+    font-family: "Montserrat", sans-serif;
+}
+.best_burgers_area .single_delicious {
+  margin-bottom: 35px;
+}
+.Burger_President_area {
+  display: block;
+  overflow: hidden;
+}
+.Burger_President_area .Burger_President_here .single_Burger_President {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+.Burger_President_area .Burger_President_here .single_Burger_President::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #1A0D01;
+  z-index: 1;
+  opacity: .4;
+}
+.Burger_President_area .Burger_President_here .single_Burger_President .room_thumb {
+  position: relative;
+  overflow: hidden;
+}
+.Burger_President_area .Burger_President_here .single_Burger_President .room_thumb .room_heading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  bottom: 60px;
+  left: 70px;
+}
+.Burger_President_area .Burger_President_here .single_Burger_President .room_thumb .room_heading span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #F0542C;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin-bottom: 3px;
+}
+.Burger_President_area .Burger_President_here .single_Burger_President .room_thumb .room_heading span {
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-bottom: 9px;
+  display: block;
+  position: relative;
+  z-index: 8;
+}
+.Burger_President_area .Burger_President_here .single_Burger_President .room_thumb .room_heading p {
+  font-size: 16px;
+  color: #E8E8E8;
+  line-height: 28px;
+  position: relative;
+  z-index: 1;
+  margin-top: 9px;
+  margin-bottom: 18px;
+}
+.Burger_President_area .Burger_President_here .single_Burger_President .room_thumb .room_heading a {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  z-index: 8;
+  opacity: 1;
+  visibility: visible;
+}
+.boxed-btn3 {
+  background: #F2C64D;
+  color: #fff;
+  display: inline-block;
+  padding: 18px 44px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: 0;
+  border: 1px solid transparent;
+  text-align: center;
+  color: #fff !important;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  padding: 9px 30px;
+  cursor: pointer;
+}
+.Burger_President_area .Burger_President_here .single_Burger_President .room_thumb .room_heading h3 {
+    font-size: 34px;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 8;
+    font-weight: 700;
+}
+.best_burgers_area {
+  padding-bottom: 115px;
+  padding-top: 140px;
+  background-image: url(../img/banner/burger_bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.Burger_President_area {
+  display: block;
+  overflow: hidden;
+}
+.testimonial_area {
+  background: #fff;
+  padding: 120px 0 115px 0;
+}
+.instragram_area {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+
+.testimonial_area {
+  background: #fff;
+  padding: 120px 0 115px 0;
+}
+.mb-60 {
+  margin-bottom: 62px;
+}
+.testimonial_area .single_testmonial p {
+  color: #040E27;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin-top: 0px;
+}
+
+.testimonial_area .single_testmonial .testmonial_author {
+  margin-top: 45px;
+}
+.testimonial_area .owl-carousel .owl-item img {
+  display: inline-block;
+  width: auto;
+}
+.testimonial_area .single_testmonial .testmonial_author .thumb {
+  width: 68px;
+  height: 68px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: auto;
+  margin: auto auto 7px auto;
+}
+.testimonial_area .single_testmonial .testmonial_author h4 {
+  color: #040E27;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+.testimonial_area .stars i {
+  font-size: 13px;
+  color: #F2C64D;
+}
+.section_title span {
+  color: #F2C64D;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  display: block;
+  font-family: "Pacifico", cursive;
+}
+.section_title h3 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1A0D01;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #F5FBFF;
+  background-image: url(../img/banner/footer_bg.png);
+}
+
+a, button {
+  color: #1F1F1F;
+  outline: medium none;
+}
+a, .button {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.overlay::before {
+  position: absolute;
+  content: "";
+  background-color: #040E27;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .4;
+}
+.bradcam_area h3 {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-family: "Paytone One", sans-serif;
+  text-transform: uppercase;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.section_title span {
+  color: #F2C64D;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  display: block;
+  font-family: "Pacifico", cursive;
+}
+.section_title h3 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1A0D01;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.login{
+ 
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+.login input{
+  height: 40px;
+  width: 100%;
+  border: 1px solid gray;
+}
+.login button{
+  height: 40px;
+  width: 100%;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.login button:hover{
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
